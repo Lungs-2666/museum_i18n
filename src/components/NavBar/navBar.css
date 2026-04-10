@@ -1,0 +1,28 @@
+    .nav_bar{
+        width: 700px;
+        height: 65px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 0px 30px;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+
+    .nav_logo{
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav_items{
+        display: flex;
+        gap: 20px;
+        font-size: 1.5rem;
+    }
+
+    .nav_items a{
+        
+    }
