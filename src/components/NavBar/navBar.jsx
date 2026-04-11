@@ -7,7 +7,7 @@
 
                 <div className='nav_items'>
                     <a href=""> Home     </a>
-                    <a href=""> Tickets  </a>
+                    <a href=""> About    </a>
                     <a href=""> Exhibits </a>
                 </div>
             </nav>

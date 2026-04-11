@@ -3,9 +3,13 @@
 
     const MuseumBg = () => {
         return (
-            <div className="museum_bg">
-
-            </div>
+            <Image 
+                src='/museum.png'
+                alt="museum_bg"
+                width={1300}
+                height={600}
+                className="museum_img"
+            />
         )
     }
 
