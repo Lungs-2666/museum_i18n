@@ -9,6 +9,7 @@
                 width={1300}
                 height={600}
                 className="museum_img"
+                loading="eager"
             />
         )
     }

@@ -1,17 +1,29 @@
     import './greetingPage.css';
-    import NavBar from '../NavBar/navBar';
     import MuseumBg from './museum';
+
+    import { Instrument_Serif } from "next/font/google";
+    
+    const instrumentSerif = Instrument_Serif({
+        subsets: ["latin"],
+        weight: ['400']
+    });
     
     const GreetingPage = () => {
         return (
             <div className='greeting-page'>
                 <MuseumBg />
-                <NavBar />
 
                 <div className='greet_group_1'>
-                    <h2>Where the future lives.</h2>
-                    <p>An exciting journey to 2071: innovations, space, AI, and sustainability. Visit Dubai's icon — Museum of the Future!</p>
+                    <div>
+                        <h2>Where the future lives.</h2>
+                        <p>An exciting journey to 2071: innovations, space, AI, and sustainability. Visit Dubai's icon — Museum of the Future!</p>
+                    </div>
+                    
+                    <a href="/about">
+                        <button className={`more_btn ${instrumentSerif.className}`}> See more </button>
+                    </a>
                 </div>
+
             </div>
         )
     }

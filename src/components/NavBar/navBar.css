@@ -5,14 +5,18 @@
         align-items: flex-end;
         justify-content: space-between;
         gap: 50px;
-        padding: 0px 30px;
+        padding: 0px 0px;
         position: absolute;
+        left: calc(50% - 45%);
+        top: 50px;
+        z-index: 2;
     }
 
     .nav_logo{
         font-size: 2rem;
         color: white;
         cursor: pointer;
+        animation: links 2s 1 forwards;
     }
 
     .nav_items{
@@ -24,6 +28,8 @@
     .nav_items a{
         transition: all .2s ease;
         border-bottom: 1px solid #ffffff00;
+        transform: translateY(-200px);
+        animation: links 2s 1 forwards;
     }
 
     .nav_items a:hover{
@@ -32,4 +38,14 @@
 
     .nav_items a:active{
         color: rgba(255, 255, 255, 0.527);
+    }
+
+    /* Animations */
+
+    @keyframes links{
+        from {
+            transform: translateY(-200px);
+        } to {
+            transform: translateY(0);
+        }
     }
