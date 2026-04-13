@@ -1,26 +1,32 @@
     'use client'
+    import './cards.css';
+    
 
     import { useState } from "react";
-    import { data } from "@/data/data"
+    import { data } from "@/data/data";
 
     const Cards = () => {
         const [cards, setCards] = useState( data );
 
         return (
             <div className="cards">
-                <ul>
-                    {cards.map(card => (
-                        <li
-                         key={card.id}
-                         className="card"
-                        >
+                {cards.map(card => (
+                    <div
+                        key={card.id}
+                        className="card"
+                    >
+                        <div className='card_group_1'>
                             <img src={card.src} alt={card.title} />
                             <h4> {card.title} </h4>
+                            
                             <p> Floor: {card.floor} </p>
+                        </div>
+
+                        <div>
                             <p> {card.info} </p>
-                        </li>
-                    ))}
-                </ul>
+                        </div>
+                    </div>   
+                ))}
             </div>
         )
     }

@@ -1,4 +1,5 @@
     import styles from './page.module.css';
+    import Cards from '@/components/Cards/cards';
     
     const Home = () => {
         return (
@@ -8,7 +9,7 @@
                 </section>
 
                 <section className={styles.about_cards}>
-
+                    <Cards />
                 </section>
             </div>   
         )

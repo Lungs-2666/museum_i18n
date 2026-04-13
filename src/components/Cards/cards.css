@@ -1,0 +1,36 @@
+    .cards{
+        width: 100vw;
+        height: 60svh;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .card{
+        width: 300px;
+        height: 400px;
+        border: 2px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        background-color: #6b358f;
+        border-radius: 15px;
+        overflow: hidden;
+        padding: 20px 5px 50px 20px;
+    }
+
+    .card_group_1{
+        height: 70%;
+        width: calc(100% - 20px);
+        display: flex;
+        flex-direction: column;
+
+            & img{
+                width: 100%;
+                height: 80%;
+            }
+    }
