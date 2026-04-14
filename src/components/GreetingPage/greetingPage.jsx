@@ -1,5 +1,9 @@
+    'use client'
+    
     import './greetingPage.css';
     import MuseumBg from './museum';
+    import AuroraBg from '../PrismBg/auroraBgComp';
+    import { useLanguage } from '@/app/context/languageContext';
 
     import { Instrument_Serif } from "next/font/google";
     
@@ -9,18 +13,21 @@
     });
     
     const GreetingPage = () => {
+        const {c} = useLanguage();
+
         return (
             <div className='greeting-page'>
+                <AuroraBg />
                 <MuseumBg />
 
                 <div className='greet_group_1'>
                     <div>
-                        <h2>Where the future lives.</h2>
-                        <p>An exciting journey to 2071: innovations, space, AI, and sustainability. Visit Dubai's icon — Museum of the Future!</p>
+                        <h2> {c.home_page.greet_heading} </h2>
+                        <p> {c.home_page.greet_deskrip} </p>
                     </div>
                     
                     <a href="/about">
-                        <button className={`more_btn ${instrumentSerif.className}`}> See more </button>
+                        <button className={`more_btn ${instrumentSerif.className}`}> {c.home_page.greet_btn} </button>
                     </a>
                 </div>
 

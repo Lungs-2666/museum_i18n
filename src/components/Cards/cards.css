@@ -1,6 +1,6 @@
     .cards{
         width: 100vw;
-        height: calc(100svh - 130px);
+        height: calc(100svh - 50px);
         position: absolute;
         bottom: 0;
         display: flex;
@@ -17,7 +17,8 @@
         flex-direction: column;
         justify-content: space-between;
         gap: 10px;
-        background-color: #6b358f;
+        background-color: rgba(0, 0, 0, .4);
+        backdrop-filter: blur(1px);
         border-radius: 15px;
         overflow: hidden;
         padding: 20px 5px 50px 20px;
