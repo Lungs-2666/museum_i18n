@@ -1,5 +1,11 @@
     'use client'
     import './cards.css';
+
+    import { Unna } from 'next/font/google';        
+    const unna = Unna({
+        subsets: ["latin"],
+        weight: ['700']
+    });
     
 
     import { useState } from "react";
@@ -9,9 +15,10 @@
         const [cards, setCards] = useState( data );
 
         return (
-            <div className="cards">
+            <div className={`cards ${unna.className}`}>
                 {cards.map(card => (
                     <div
+                        style={{animationDelay: `${card.delay}s`}}
                         key={card.id}
                         className="card"
                     >
